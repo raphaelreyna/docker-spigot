@@ -3,7 +3,7 @@ set -e
 
 # Change owner to minecraft.
 if [ "$SKIPCHMOD" != "true" ]; then
-  sudo chown -R minecraft:minecraft $SPIGOT_HOME/
+  chown -R minecraft:minecraft $SPIGOT_HOME/
 else
   echo "SKIPCHMOD option enabled. If you have access issue with your files, disable it"
 fi
